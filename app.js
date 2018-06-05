@@ -7,6 +7,7 @@ app.use(function (req, res, next) {
     //var allowedOrigins = ['http://localhost:3000', 'http://localhost:3000?', 'https://crcicimmigration.firebaseapp.com', 'https://crcicimmigration.firebaseapp.com?', 'https://construction-19bf3.firebaseapp.com', 'https://construction-19bf3.firebaseapp.com?', 'https://crcic-f8f8f.firebaseapp.com', 'https://crcic-f8f8f.firebaseapp.com?', 'https://oceanrecruitment-d4dc5.firebaseapp.com', 'https://oceanrecruitment-d4dc5.firebaseapp.com?'];
     var allowed=["http//localhost:3000","http//localhost:3000?", 'https://crcicimmigration.firebaseapp.com', 'https://crcicimmigration.firebaseapp.com?', 'https://construction-19bf3.firebaseapp.com', 'https://construction-19bf3.firebaseapp.com?', 'https://crcic-f8f8f.firebaseapp.com', 'https://crcic-f8f8f.firebaseapp.com?', 'https://oceanrecruitment-d4dc5.firebaseapp.com', 'https://oceanrecruitment-d4dc5.firebaseapp.com?' ]
     var origin = req.headers.origin;
+    console.log(origin)
     if (allowed.indexOf(origin) > -1) {
         res.setHeader('Access-Control-Allow-Origin', "*");
     }
