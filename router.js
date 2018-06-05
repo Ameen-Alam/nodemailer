@@ -32,4 +32,7 @@ router.post('/email',(req,res,next)=>{
           }
       });
 })
+router.get("/",(req,res,next)=>{
+  res.send({message:'App is runing on heroku '})
+})
 module.exports=router;
