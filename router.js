@@ -4,6 +4,7 @@ var sgTransport = require('nodemailer-sendgrid-transport');
 //you need to create an account on sendgrid.com for email sending
 router.post('/email',(req,res,next)=>{
   console.log(req.body);  
+  var port=process.env.PORT
   var options = {
         auth: {
           api_user: 'ameenalam222',//your sendgrid username
